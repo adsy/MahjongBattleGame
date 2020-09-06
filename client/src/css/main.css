@@ -1,0 +1,35 @@
+.appContainer {
+  /* Whole application is centered horizontally and vertically */
+  position: absolute;
+  left: 750px;
+  left: 50%;
+  top: 50%;
+  /*  */
+  /* This shifts topmost div halfway left and up which adds to get it centered. */
+  transform: translate(-50%, -50%);
+  border: 2px solid #0000ff;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+
+  /* Display is set to grid and 2 columns are defined. */
+  display: grid;
+  grid-template-columns: 76.1% 28.9%;
+  -webkit-box-shadow: 0 0 25px 0 regba(255, 200, 0, 0.75);
+  -moz-box-shadow: 0 0 25px 0 rgba(255, 200, 0, 0.75);
+  box-shadow: 0 0 25px 0 regba(255, 200, 0, 0.75);
+}
+
+.playerBoard {
+  grid-column: 1/2;
+}
+
+.controlArea {
+  height: 240px;
+  margin: 10px;
+  padding: 10px;
+  grid-column: 2/3;
+  border: 1px solid #000000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
