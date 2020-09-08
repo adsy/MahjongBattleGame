@@ -8,7 +8,7 @@ const players: any = {};
 //Start up express app and connect it to the dist folder in client
 const app: Express = express();
 app.use("/", express.static(path.join(__dirname, "../../client/dist")));
-app.listen(80, () => {
+app.listen(3000, () => {
   console.log("BattleJong server is ready.");
 });
 

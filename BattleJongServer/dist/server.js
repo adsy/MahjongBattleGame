@@ -11,7 +11,7 @@ var players = {};
 //Start up express app and connect it to the dist folder in client
 var app = express_1.default();
 app.use("/", express_1.default.static(path_1.default.join(__dirname, "../../client/dist")));
-app.listen(80, function () {
+app.listen(3000, function () {
     console.log("BattleJong server is ready.");
 });
 //Construct WebSocket Server
